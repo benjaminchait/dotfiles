@@ -1,0 +1,25 @@
+[user]
+        name = Benjamin Chait
+        email = benjamin@simple.com
+[filter "media"]
+        required = true
+        clean = git media clean %f
+        smudge = git media smudge %f
+[push]
+        default = simple
+[hub]
+        host = github.banksimple.com
+[credential]
+        helper = osxkeychain
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        unstage = reset HEAD --
+        log = log -l HEAD
+        visual = !gitk
+[filter "hawser"]
+        clean = git hawser clean %f
+        smudge = git hawser smudge %f
+        required = true
