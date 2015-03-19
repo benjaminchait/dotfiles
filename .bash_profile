@@ -3,6 +3,10 @@ if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
+## rbenv config
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 ## update bash line
 export PS1='\W \u\$ '
 
@@ -11,8 +15,9 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 ## aliases
+alias cc="cd ~/ && clear && clear && clear"
 alias profile="cd ~/ && nano .bash_profile"
-alias hosts="cd /private/etc && nano hosts"
+alias hosts="cd /private/etc && sudo nano hosts"
 alias launchpad-reset="defaults write com.apple.dock ResetLaunchPad -bool true && killall Dock"
 
 ## git tab autocompletion
