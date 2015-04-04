@@ -5,7 +5,7 @@ fi
 
 ## git tab autocompletion
 if [ -f ~/.git-completion.bash ]; then
-        . ~/.git-completion.bash
+   . ~/.git-completion.bash
 fi
 
 ## rbenv config
