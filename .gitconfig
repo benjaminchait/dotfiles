@@ -1,14 +1,10 @@
 [user]
         name = Benjamin Chait
-        email = benjamin@simple.com
+        email = benjamin@chait.co
 [filter "media"]
         required = true
         clean = git media clean %f
         smudge = git media smudge %f
-[push]
-        default = simple
-[hub]
-        host = github.banksimple.com
 [credential]
         helper = osxkeychain
 [alias]
